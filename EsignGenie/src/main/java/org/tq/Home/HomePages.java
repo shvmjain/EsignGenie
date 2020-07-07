@@ -62,7 +62,8 @@ public class HomePages extends BaseClass
 		WebDriverWait wait= new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\'docFileUpload\']")));
 		//clickOnUploadNewDocument.sendKeys("C:\\Users\\shivu\\Downloads\\Shivam_Jain.pdf");
-		clickOnUploadNewDocument.sendKeys("E:\\Hybrid framwork\\EsignGenie\\EsignGenie.pdf");
+		clickOnUploadNewDocument.sendKeys("C:\\Users\\shivu\\git\\EsignGenie\\EsignGenie\\Document\\EsignGenie.pdf");
+		//clickOnUploadNewDocument.sendKeys("./Document/EsignGenie.pdf");
 		Thread.sleep(3000);
 
 	}
