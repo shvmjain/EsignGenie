@@ -26,35 +26,6 @@ public class HomePages extends BaseClass
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath="//*[@id=\"docFileUpload\"]") private WebElement clickOnUploadNewDocument;
-	@FindBy(xpath="//button[@id='addMeBtn']") private WebElement clickOnAddMeButton;
-	@FindBy(xpath="//*[@id=\"addNewPartyBtn\"]") private WebElement clickOnAddNewPartyButton;
-	@FindBy(xpath="//*[@id=\"nwpfname\"]") private WebElement enterFirstName;
-	@FindBy(xpath="//*[@id=\"nwplname\"]") private WebElement enterLastName;
-	@FindBy(xpath="//*[@id=\"nwpemid\"]") private WebElement enterEmailId;
-	@FindBy(xpath="//*[@id=\"newPartyDiv\"]/div[4]/div[1]/div/button") private WebElement clickOnPhoneDropDownList;
-	@FindBy(xpath="//*[@id=\"newPartyDiv\"]/div[4]/div[1]/div/button") private WebElement enterCountryNameInTextBox;
-	@FindBy(xpath="//*[@id=\"newPartyDiv\"]/div[4]/div[1]/div/div/ul/li[103]/a/span") private WebElement clickOnCountryCode;
-	@FindBy(xpath="//*[@id=\"mobile-number\"]") private WebElement enterMobNo;
-	@FindBy(xpath="//*[@id=\"newPartyBtn\"]") private WebElement clickOnAddButton;
-	@FindBy(xpath="//a[@id='savebtn']") private WebElement clickOnSaveButton;
-	@FindBy(xpath="//div[@class='drag-initialfield']") private WebElement clickOnInitialField;
-	@FindBy(xpath="//*[@placeholder='Signer Name']") private WebElement clickOnSignerName;
-	@FindBy(xpath="//*[@placeholder='Signer Email']") private WebElement clickOnSignerEmail;
-	@FindBy(xpath="//select[@id='partyList']") private WebElement clickOnPartyResponsible;
-	@FindBy(xpath="//a[@id='sendbtn']") private WebElement clickOnSendButton;
-	@FindBy(xpath="//div[@class='party-entry party-selected']/div[@class='media-body']/SELECT[1]") private WebElement clickOnPartyPermission;
-	@FindBy(xpath="//select[@id='authenticationLevel']") private WebElement clickOnAuthenticationLevel;
-	@FindBy(xpath="//label[@class='switch-input']/i") private WebElement clickOnEnforceSigningSequence;
-	@FindBy(xpath="//div[@id='addDocli']/a[@id='addDoc']") private WebElement clickOnAddNewDocument;
-	@FindBy(xpath="//span[@id='folderName']") private WebElement clickOnRenameFolder;
-	@FindBy(xpath="//input[@class='form-control input-sm']") private WebElement enterTextOfFolder;
-	@FindBy(xpath="//i[@class='glyphicon glyphicon-ok']") private WebElement clickOnOKButton;
-	@FindBy(xpath="//input[@id='docFileUpload']") private WebElement clickOnUploadDocumentFromAddMoreDocument;
-	//	@FindBy(xpath="//button[@id='resendinvite']") private WebElement clickOnFinalSendButton;
-	@FindBy(xpath="//div[@class='fr']/button[@id='resendinvite']") private WebElement clickOnFinalSendButton;
-
-
 
 	public void uploadPDF() throws InterruptedException
 	{
@@ -191,63 +162,114 @@ public class HomePages extends BaseClass
 
 	}
 
+	public void documentWaitingForMySignature()
+	{
+
+	}
+
+	public void documentWaitingForOtherSignature()
+	{
+
+	}
+
+	public void continueFromTheDraft()
+	{
+
+	}
+
+	public void completedDocuments()
+	{
+
+	}
 
 
 
 
+	@FindBy(xpath="//*[@id=\"docFileUpload\"]")
+	private WebElement clickOnUploadNewDocument;
 
+	@FindBy(xpath="//button[@id='addMeBtn']") 
+	private WebElement clickOnAddMeButton;
 
+	@FindBy(xpath="//*[@id=\"addNewPartyBtn\"]")
+	private WebElement clickOnAddNewPartyButton;
 
+	@FindBy(xpath="//*[@id=\"nwpfname\"]") 
+	private WebElement enterFirstName;
 
+	@FindBy(xpath="//*[@id=\"nwplname\"]")
+	private WebElement enterLastName;
 
+	@FindBy(xpath="//*[@id=\"nwpemid\"]")
+	private WebElement enterEmailId;
 
+//	@FindBy(xpath="//*[@id=\"newPartyDiv\"]/div[4]/div[1]/div/button")
+	@FindBy(xpath="//span[@class='filter-option pull-left']")
+	private WebElement clickOnPhoneDropDownList;
 
+	//@FindBy(xpath="//*[@id=\"newPartyDiv\"]/div[4]/div[1]/div/button") 
+	@FindBy(xpath="//input[@class='input-block-level form-control']")
+	private WebElement enterCountryNameInTextBox;
 
+	@FindBy(xpath="//*[@id=\"newPartyDiv\"]/div[5]/div[1]/div/div/ul/li[103]/a/span")
+	private WebElement clickOnCountryCode;
 
+	@FindBy(xpath="//*[@id=\"mobile-number\"]")
+	private WebElement enterMobNo;
 
+	@FindBy(xpath="//*[@id=\"newPartyBtn\"]") 
+	private WebElement clickOnAddButton;
 
+	@FindBy(xpath="//a[@id='savebtn']")
+	private WebElement clickOnSaveButton;
 
+	@FindBy(xpath="//div[@class='drag-initialfield']") 
+	private WebElement clickOnInitialField;
 
+	@FindBy(xpath="//*[@placeholder='Signer Name']") 
+	private WebElement clickOnSignerName;
 
+	@FindBy(xpath="//*[@placeholder='Signer Email']") 
+	private WebElement clickOnSignerEmail;
 
+	@FindBy(xpath="//select[@id='partyList']") 
+	private WebElement clickOnPartyResponsible;
 
+	@FindBy(xpath="//a[@id='sendbtn']") 
+	private WebElement clickOnSendButton;
 
+	@FindBy(xpath="//div[@class='party-entry party-selected']/div[@class='media-body']/SELECT[1]") 
+	private WebElement clickOnPartyPermission;
 
+	@FindBy(xpath="//select[@id='authenticationLevel']")
+	private WebElement clickOnAuthenticationLevel;
 
+	@FindBy(xpath="//label[@class='switch-input']/i") 
+	private WebElement clickOnEnforceSigningSequence;
 
+	@FindBy(xpath="//div[@id='addDocli']/a[@id='addDoc']") 
+	private WebElement clickOnAddNewDocument;
 
+	@FindBy(xpath="//span[@id='folderName']") 
+	private WebElement clickOnRenameFolder;
 
+	@FindBy(xpath="//input[@class='form-control input-sm']") 
+	private WebElement enterTextOfFolder;
 
+	@FindBy(xpath="//i[@class='glyphicon glyphicon-ok']")
+	private WebElement clickOnOKButton;
 
+	@FindBy(xpath="//input[@id='docFileUpload']")
+	private WebElement clickOnUploadDocumentFromAddMoreDocument;
 
+	@FindBy(xpath="//div[@class='fr']/button[@id='resendinvite']") 
+	private WebElement clickOnFinalSendButton;
 
+	@FindBy(xpath="//li[@class='animated fadeInDown'][1]/a") 
+	private WebElement clickOnDocumentsWaitingforMySignature;
 
-
-
-
-	//		JavascriptExecutor js = (JavascriptExecutor) driver;
-	//		Actions act= new Actions(driver); 
-	//		List <WebElement> sidemenu=driver.findElements(By.xpath("//*[@id='collapseOne']/a"));
-	//		int x=sidemenu.size();
-	//		//System.out.println("Length:" +x);
-	//		String datacid=js.executeScript("return document.getElementsByClassName('doc-content-img-wrap dropTarget')[0].getAttribute('data-cid')").toString();
-	//		//System.out.println("data cid :" +datacid);
-	//		WebElement docImg=driver.findElement(By.id("doc" +datacid+ "_page1_img"));
-	//		for(int i=0; i<x; i++)
-	//		{
-	//			String subStrBool=js.executeScript("return document.getElementById('collapseOne').getElementsByTagName('a')["+ i +"].draggable").toString();
-	//			boolean subbool=Boolean.parseBoolean(subStrBool);
-	//			//System.out.println(subbool);
-	//			if(subbool==true)
-	//			{
-	//				String name=sidemenu.get(i).getText();
-	//				//System.out.println("Signature field" +name);
-	//				act.clickAndHold(sidemenu.get(i)).moveToElement(docImg, (5), (i*40)).release().build().perform();
-	//				Thread.sleep(1000);
-	//			}
-	//		}
-
-
+	@FindBy(xpath="//li[@class='animated fadeInDown'][2]/a") 
+	private WebElement clickOnDocumentsWaitingforOtherSignature;
 
 
 
