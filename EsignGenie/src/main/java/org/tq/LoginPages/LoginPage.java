@@ -33,12 +33,12 @@ public class LoginPage extends BaseClass
 	 @FindBy(xpath="//input[@id='sendResetPassword_party_emailId']") private WebElement enterEmailId;
 	 @FindBy(xpath="//form[@id='sendResetPassword']/input[@id='submit']") private WebElement clickOnSubmitButton;
 	
-	 public void Loginaccount() throws Exception
+	 public void Loginaccount(String UserName, String Password) throws Exception
 	 {
 		 enterLoginButton.click();
 		 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		 enterUserName.sendKeys("shvmjain@gmail.com");
-		 enterPassword.sendKeys("Shivam");
+		 enterUserName.sendKeys(UserName);
+		 enterPassword.sendKeys(Password);
 		 clickOnLogin.click(); 
 		 Thread.sleep(3000);
 		 //String title=driver.getTitle();
@@ -63,6 +63,17 @@ public class LoginPage extends BaseClass
 		 enterEmailId.sendKeys("sjain@accountsight.com");
 		 clickOnSubmitButton.click();
 		 Thread.sleep(1000);
+	 }
+	 
+	 public void LoginaccountwithDifferentUser(String UserName, String Password) throws Exception
+	 {
+		 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		 enterUserName.sendKeys(UserName);
+		 enterPassword.sendKeys(Password);
+		 clickOnLogin.click(); 
+		 Thread.sleep(3000);
+		 //String title=driver.getTitle();
+		// System.out.println(title);
 	 }
 	 
 	 

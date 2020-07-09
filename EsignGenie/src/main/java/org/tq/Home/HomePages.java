@@ -162,13 +162,38 @@ public class HomePages extends BaseClass
 
 	}
 
-	public void documentWaitingForMySignature()
+	public void documentWaitingForMySignature() throws InterruptedException
 	{
-
+		Thread.sleep(2000);
+		WebElement ele = clickOnDocumentsWaitingforMySignature;
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", ele);
+		clickOnPdfDocumentFrom.click();
+		clickOnInitialFieldTextBox.click();
+		Thread.sleep(2000);
+		clickOnInitialImage.click();
+		clickOnInitialButton.click();
+		clickOnFinishButton.click();
+		checkOnConfirmSignature.click();
+		checkOnConfirmButton.click();
+		clickOnOkButton.click();
 	}
 
-	public void documentWaitingForOtherSignature()
+	public void documentWaitingForOtherSignature() throws InterruptedException
 	{
+		Thread.sleep(2000);
+		WebElement ele = clickOnDocumentsWaitingforOtherSignature;
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", ele);
+		clickOnPdfDocumentFrom.click();
+		clickOnSignatureFieldFromDocumentWaitingForOtherSignature.click();
+		Thread.sleep(2000);
+		clickOnSignatureImage.click();
+		clickOnSignButton.click();
+		clickOnFinishButton.click();
+		checkOnConfirmSignature.click();
+		checkOnConfirmButton.click();
+		clickOnOkButton.click();
 
 	}
 
@@ -181,8 +206,6 @@ public class HomePages extends BaseClass
 	{
 
 	}
-
-
 
 
 	@FindBy(xpath="//*[@id=\"docFileUpload\"]")
@@ -203,11 +226,9 @@ public class HomePages extends BaseClass
 	@FindBy(xpath="//*[@id=\"nwpemid\"]")
 	private WebElement enterEmailId;
 
-//	@FindBy(xpath="//*[@id=\"newPartyDiv\"]/div[4]/div[1]/div/button")
 	@FindBy(xpath="//span[@class='filter-option pull-left']")
 	private WebElement clickOnPhoneDropDownList;
 
-	//@FindBy(xpath="//*[@id=\"newPartyDiv\"]/div[4]/div[1]/div/button") 
 	@FindBy(xpath="//input[@class='input-block-level form-control']")
 	private WebElement enterCountryNameInTextBox;
 
@@ -271,6 +292,48 @@ public class HomePages extends BaseClass
 	@FindBy(xpath="//li[@class='animated fadeInDown'][2]/a") 
 	private WebElement clickOnDocumentsWaitingforOtherSignature;
 
+	@FindBy(xpath="//li[@class='animated fadeInDown'][3]/a") 
+	private WebElement clickOnContinousFromDraft;
 
+	@FindBy(xpath="//li[@class='animated fadeInDown'][4]/a") 
+	private WebElement clickOnCompletedDocuments;
+
+	@FindBy(xpath="//div[@class='list-group']/div[@class='list-group-item'][1]/div[@class='row']/div[@class='col-sm-4 fittext']/span/a") 
+	private WebElement clickOnPdfDocumentFrom;
+
+	@FindBy(xpath="//*[@class='drag-initialfield ttbottom']") 
+	private WebElement clickOnInitialFieldTextBox;
+
+	@FindBy(xpath="//div[@id='style1']/canvas[@id='type_canvas1']") 
+	private WebElement clickOnInitialImage;
+
+	@FindBy(xpath="//*[@class='btn btn-primary zoom-block pull-right']") 
+	private WebElement clickOnInitialButton;
+
+	@FindBy(xpath="//button[@id='rightFinishBtn']") 
+	private WebElement clickOnFinishButton;
+
+	@FindBy(xpath="//div[@class='checkbox']/label") 
+	private WebElement checkOnConfirmSignature;
+
+	@FindBy(xpath="//button[@id='btn-1']") 
+	private WebElement checkOnConfirmButton;
+
+	@FindBy(xpath="//div[@class='drag-signfield ttbottom']") 
+	private WebElement clickOnSignatureFieldFromDocumentWaitingForMySignature;
+	
+	@FindBy(xpath="//div[@class='drag-signfield ttbottom ']") 
+	private WebElement clickOnSignatureFieldFromDocumentWaitingForOtherSignature;
+	
+	@FindBy(xpath="//canvas[@id='type_canvas1']") 
+	private WebElement clickOnSignatureImage;
+	
+	@FindBy(xpath="//*[@class='btn btn-primary zoom-block pull-right']") 
+	private WebElement clickOnSignButton;
+
+	@FindBy(xpath="//*[@class=\"btn btn-success-outline\"]") 
+	private WebElement clickOnOkButton;
+
+	
 
 }

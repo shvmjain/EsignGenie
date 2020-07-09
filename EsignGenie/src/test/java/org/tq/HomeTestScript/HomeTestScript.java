@@ -18,7 +18,7 @@ public class HomeTestScript extends BaseClass
 		ExtentTest test = report.createTest("Verify the Login Test", "This Test is verified the login functionality.");
 		test.info("Start the execution of Test Case-->Login the EsignGenie Account with valid credentials.");
 		LoginPage login= new LoginPage(driver);
-		login.Loginaccount();
+		login.Loginaccount("shvmjain@gmail.com", "Shivam");
 		test.pass("Pass");
 		test.info("Test case has been executed Successfully-->Login functionality.");
 	}
@@ -145,7 +145,18 @@ public class HomeTestScript extends BaseClass
 		test.info("Test case has been executed Successfully-->Send uploaded document.");
 	}
 	
-	@Test(priority=13)
+	@Test(priority=13, enabled=false)
+	public void verifyDocumentWaitingForMySignature() throws Exception
+	{
+		ExtentTest test = report.createTest("Verify the logout application", "This Test is verified to logout application");
+		test.info("Start the execution of Test Case-->Logout Application");
+		HomePages homepage= new HomePages(driver);
+		homepage.documentWaitingForMySignature();
+		test.pass("Pass");
+		test.info("Test case has been executed Successfully-->Logout Application.");
+	}
+	
+	@Test(priority=14)
 	public void logOutApplication() throws InterruptedException
 	{
 		ExtentTest test = report.createTest("Verify the logout application", "This Test is verified to logout application");
@@ -155,6 +166,10 @@ public class HomeTestScript extends BaseClass
 		test.pass("Pass");
 		test.info("Test case has been executed Successfully-->Logout Application.");
 	}
+	
+	
+	
+
 
 
 }

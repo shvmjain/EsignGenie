@@ -19,7 +19,7 @@ public class LoginTest extends BaseClass
 		ExtentTest test = report.createTest("Login Test", "This Test is verified the login functionality");
 		test.info("Start the execution of Test Case-->Login the EsignGenie Account with valid credentials");
 		LoginPage login= new LoginPage(driver);
-		login.Loginaccount();
+		login.Loginaccount("shvmjain@gmail.com", "Shivam");
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		test.pass("Pass");
 		test.info("Test case has been executed-->Login functionality");

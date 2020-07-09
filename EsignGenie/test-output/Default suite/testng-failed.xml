@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.tq.EsignGenieTestScript.LoginTest">
+      <class name="org.tq.HomeTestScript.AllTabofHomeTestScript">
         <methods>
           <include name="tearDown"/>
           <include name="setupSuite"/>
-          <include name="verifyForgotPassword"/>
           <include name="setup"/>
+          <include name="completeProcessOfSignatureOfOnePartyToOtherParty"/>
         </methods>
-      </class> <!-- org.tq.EsignGenieTestScript.LoginTest -->
+      </class> <!-- org.tq.HomeTestScript.AllTabofHomeTestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
