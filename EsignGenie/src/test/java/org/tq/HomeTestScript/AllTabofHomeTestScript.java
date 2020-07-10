@@ -10,63 +10,7 @@ import com.aventstack.extentreports.ExtentTest;
 
 public class AllTabofHomeTestScript extends BaseClass
 {
-	@Test(priority=1, enabled=false)
-	public void loginTest() throws Exception
-	{
-		//ExtentTest test = extent.createTest("Login Test", "This Test is verified the login functionality");
-		ExtentTest test = report.createTest("Verify the Login Test", "This Test is verified the login functionality.");
-		test.info("Start the execution of Test Case-->Login the EsignGenie Account with valid credentials.");
-		LoginPage login= new LoginPage(driver);
-		login.Loginaccount("shvmjain@gmail.com", "Shivam");
-		test.pass("Pass");
-		test.info("Test case has been executed Successfully-->Login functionality.");
-	}
-	
-	@Test(priority=2, enabled=false)
-	public void verifyDocumentWaitingForMySignature() throws Exception
-	{
-		ExtentTest test = report.createTest("Verify the logout application", "This Test is verified to Document Waiting For My Signature");
-		test.info("Start the execution of Test Case-->Document Waiting For My Signature");
-		HomePages homepage= new HomePages(driver);
-		homepage.documentWaitingForMySignature();
-		test.pass("Pass");
-		test.info("Test case has been executed Successfully-->Document Waiting For My Signature");
-	}
-	
-	@Test(priority=3, enabled=false)
-	public void logOutApplication() throws InterruptedException
-	{
-		ExtentTest test = report.createTest("Verify the logout application", "This Test is verified to logout application");
-		test.info("Start the execution of Test Case-->Logout Application");
-		LogoutPages logout = new LogoutPages(driver);
-		logout.logOut();
-		test.pass("Pass");
-		test.info("Test case has been executed Successfully-->Logout Application.");
-	}
-	
-	@Test(priority=4, enabled=false)
-	public void loginTestwithDifferentUser() throws Exception
-	{
-		//ExtentTest test = extent.createTest("Login Test", "This Test is verified the login functionality");
-		ExtentTest test = report.createTest("Verify the Login Test", "This Test is verified the login functionality.");
-		test.info("Start the execution of Test Case-->Login the EsignGenie Account with valid credentials.");
-		LoginPage login= new LoginPage(driver);
-		login.LoginaccountwithDifferentUser("sjain@accountsight.com", "Shivam");
-		test.pass("Pass");
-		test.info("Test case has been executed Successfully-->Login functionality.");
-	}
-	
-	@Test(priority=5, enabled=false)
-	public void verifyDocumentWaitingForOtherSignature() throws InterruptedException
-	{
-		ExtentTest test = report.createTest("Verify the logout application", "This Test is verified to logout application");
-		test.info("Start the execution of Test Case-->Logout Application");
-		HomePages homepage= new HomePages(driver);
-		homepage.documentWaitingForOtherSignature();
-		test.pass("Pass");
-		test.info("Test case has been executed Successfully-->Logout Application.");
-	}
-	
+
 	@Test(priority=1)
 	public void CreateDocumentFromHomePage() throws Exception
 	{
@@ -139,6 +83,23 @@ public class AllTabofHomeTestScript extends BaseClass
 		logout.logOut();
 		test.pass("Pass");
 		test.info("Test case has been executed Successfully-->Document waiting for other signature");
+	}
+	
+	@Test(priority=5, enabled=true)
+	public void VerifyContinueFromDraft() throws Exception
+	{
+		ExtentTest test = report.createTest("Verify the process of Document waiting for other signature", "This Test is verified to Continue from a Draft");
+		test.info("Start the execution of Test Case-->Continue from a Draft");
+		LoginPage login= new LoginPage(driver);
+		HomePages homepage= new HomePages(driver);
+		LogoutPages logout = new LogoutPages(driver);
+		login.LoginaccountwithDifferentUser("shvmjain@gmail.com", "Shivam");
+		homepage.saveDocumentInDraft();
+		login.LoginaccountwithDifferentUser("shvmjain@gmail.com", "Shivam");
+		homepage.continueFromTheDraft();
+		logout.logOut();
+		test.pass("Pass");
+		test.info("Test case has been executed Successfully-->Continue from a Draft");
 	}
 
 }

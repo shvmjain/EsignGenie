@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.tq.EsignGenie.BaseClass;
-import org.tq.Utility.GetProperty;
+import org.tq.LoginPages.LogoutPages;
 
 public class HomePages extends BaseClass
 {
@@ -112,6 +112,17 @@ public class HomePages extends BaseClass
 		}
 
 	}
+	
+	public void updatePropertyOfSign() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		clickOnSign.click();
+		Thread.sleep(2000);
+		ele=clickOnPartyResponsible;
+		Select slct= new Select(ele);
+		slct.selectByIndex(1);
+		Thread.sleep(2000);
+	}
 
 	public void updatePropertyOfInitialField() throws InterruptedException
 	{
@@ -145,11 +156,7 @@ public class HomePages extends BaseClass
 	public void sendDocument() throws InterruptedException
 	{
 		Thread.sleep(3000);
-		//WebDriverWait wait= new WebDriverWait(driver,30);
-		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@id='sendbtn']")));
 		clickOnSendButton.click();
-		//	WebDriverWait wait= new WebDriverWait(driver,30);
-		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@id='resendinvite']")));
 		Thread.sleep(5000);
 		boolean b= clickOnFinalSendButton.isEnabled();
 		System.out.println("Enabled" +b);
@@ -176,6 +183,7 @@ public class HomePages extends BaseClass
 		clickOnFinishButton.click();
 		checkOnConfirmSignature.click();
 		checkOnConfirmButton.click();
+		Thread.sleep(2000);
 		clickOnOkButton.click();
 	}
 
@@ -197,14 +205,36 @@ public class HomePages extends BaseClass
 
 	}
 
-	public void continueFromTheDraft()
+	public void continueFromTheDraft() throws InterruptedException
 	{
-
+		Thread.sleep(2000);
+		WebElement ele = clickOnContinousFromDraft;
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", ele);
+		clickOnPdfDocumentFrom.click();
+		sendDocument();
+		
 	}
 
-	public void completedDocuments()
+	public void completedDocuments() throws InterruptedException
 	{
-
+		Thread.sleep(2000);
+		WebElement ele = clickOnCompletedDocuments;
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", ele);
+		
+	}
+	
+	public void saveDocumentInDraft() throws InterruptedException
+	{
+		uploadPDF();
+		addMe();
+	//	addNewParty();
+		dragAndDropSignatureField();
+		updatePropertyOfSignerEmail();
+		saveDocument();
+		LogoutPages logout= new LogoutPages(driver);
+		logout.logOut();
 	}
 
 
@@ -243,6 +273,10 @@ public class HomePages extends BaseClass
 
 	@FindBy(xpath="//a[@id='savebtn']")
 	private WebElement clickOnSaveButton;
+	
+	@FindBy(xpath="//div[@class='drag-signfield']") 
+	private WebElement clickOnSign;
+	
 
 	@FindBy(xpath="//div[@class='drag-initialfield']") 
 	private WebElement clickOnInitialField;
@@ -334,6 +368,12 @@ public class HomePages extends BaseClass
 	@FindBy(xpath="//*[@class=\"btn btn-success-outline\"]") 
 	private WebElement clickOnOkButton;
 
-	
+	@FindBy(xpath="//span[@class='far fa-download']") 
+	private WebElement clickOnDownloadFileFromDraft;
+
+	//div[@class='drag-signfield']
+
+	//div[1]/div[1]/div[@class='drag-signfield']
+	//*[@id="fid_164574227"]
 
 }

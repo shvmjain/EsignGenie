@@ -54,7 +54,7 @@ public class BaseClass
 		
 		report.flush();
 		Reporter.log("Test Completed >>> Extent Report Generated", true);
-		//EmailSent.emailSentAfterSuccessfullTestCaseExecution();
+		EmailSent.emailSentAfterSuccessfullTestCaseExecution();
 		BrowserFactory.quitDriver(driver);
 	}
 

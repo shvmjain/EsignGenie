@@ -17,12 +17,12 @@
       <![CDATA[Test Completed >>> Extent Report Generated]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-07-09T12:29:56 IST" name="Default suite" finished-at="2020-07-09T12:31:58 IST" duration-ms="121838">
+  <suite started-at="2020-07-10T15:19:50 IST" name="Default suite" finished-at="2020-07-10T15:21:51 IST" duration-ms="120511">
     <groups>
     </groups>
-    <test started-at="2020-07-09T12:29:56 IST" name="Default test" finished-at="2020-07-09T12:31:58 IST" duration-ms="121838">
+    <test started-at="2020-07-10T15:19:50 IST" name="Default test" finished-at="2020-07-10T15:21:51 IST" duration-ms="120511">
       <class name="org.tq.HomeTestScript.HomeTestScript">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:29:56 IST" name="setupSuite" finished-at="2020-07-09T12:29:56 IST" duration-ms="312" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:19:50 IST" name="setupSuite" finished-at="2020-07-10T15:19:50 IST" duration-ms="318" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Settings done Test can be started ]]>
@@ -32,7 +32,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:29:56 IST" name="setup" finished-at="2020-07-09T12:30:12 IST" duration-ms="16400" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:19:50 IST" name="setup" finished-at="2020-07-10T15:20:05 IST" duration-ms="14831" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trying to start Browser and Getting application ready]]>
@@ -42,55 +42,55 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:1, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:30:12 IST" name="loginTest" finished-at="2020-07-09T12:30:31 IST" duration-ms="19032" status="PASS">
+        <test-method signature="loginTest()[pri:1, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:20:05 IST" name="loginTest" finished-at="2020-07-10T15:20:13 IST" duration-ms="8214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="createNewDocument()[pri:3, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:30:31 IST" name="createNewDocument" finished-at="2020-07-09T12:30:41 IST" duration-ms="9281" status="PASS">
+        <test-method signature="createNewDocument()[pri:3, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:20:13 IST" name="createNewDocument" finished-at="2020-07-10T15:20:21 IST" duration-ms="7548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewDocument -->
-        <test-method signature="addMe()[pri:4, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:30:41 IST" name="addMe" finished-at="2020-07-09T12:30:44 IST" duration-ms="2788" status="PASS">
+        <test-method signature="addMe()[pri:4, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:20:21 IST" name="addMe" finished-at="2020-07-10T15:20:25 IST" duration-ms="4020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMe -->
-        <test-method signature="addNewParty()[pri:5, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:30:44 IST" name="addNewParty" finished-at="2020-07-09T12:30:53 IST" duration-ms="9482" status="PASS">
+        <test-method signature="addNewParty()[pri:5, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:20:25 IST" name="addNewParty" finished-at="2020-07-10T15:20:34 IST" duration-ms="9454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewParty -->
-        <test-method signature="addSignatureField()[pri:6, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:30:53 IST" name="addSignatureField" finished-at="2020-07-09T12:31:00 IST" duration-ms="6656" status="PASS">
+        <test-method signature="addSignatureField()[pri:6, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:20:34 IST" name="addSignatureField" finished-at="2020-07-10T15:20:41 IST" duration-ms="6730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addSignatureField -->
-        <test-method signature="addDataField()[pri:7, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:31:00 IST" name="addDataField" finished-at="2020-07-09T12:31:06 IST" duration-ms="6411" status="PASS">
+        <test-method signature="addDataField()[pri:7, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:20:41 IST" name="addDataField" finished-at="2020-07-10T15:20:48 IST" duration-ms="6549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addDataField -->
-        <test-method signature="updatePartyOfInitialField()[pri:8, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:31:06 IST" name="updatePartyOfInitialField" finished-at="2020-07-09T12:31:13 IST" duration-ms="6373" status="PASS">
+        <test-method signature="updatePartyOfInitialField()[pri:8, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:20:48 IST" name="updatePartyOfInitialField" finished-at="2020-07-10T15:20:54 IST" duration-ms="6441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePartyOfInitialField -->
-        <test-method signature="updatePartyOfSignerEmail()[pri:9, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:31:13 IST" name="updatePartyOfSignerEmail" finished-at="2020-07-09T12:31:15 IST" duration-ms="2449" status="PASS">
+        <test-method signature="updatePartyOfSignerEmail()[pri:9, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:20:54 IST" name="updatePartyOfSignerEmail" finished-at="2020-07-10T15:20:56 IST" duration-ms="2468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePartyOfSignerEmail -->
-        <test-method signature="updatePartyOfSignerName()[pri:10, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:31:15 IST" name="updatePartyOfSignerName" finished-at="2020-07-09T12:31:17 IST" duration-ms="2427" status="PASS">
+        <test-method signature="updatePartyOfSignerName()[pri:10, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:20:56 IST" name="updatePartyOfSignerName" finished-at="2020-07-10T15:20:59 IST" duration-ms="2542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePartyOfSignerName -->
-        <test-method signature="saveUploadedDocument()[pri:11, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:31:17 IST" name="saveUploadedDocument" finished-at="2020-07-09T12:31:21 IST" duration-ms="3208" status="PASS">
+        <test-method signature="saveUploadedDocument()[pri:11, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:20:59 IST" name="saveUploadedDocument" finished-at="2020-07-10T15:21:02 IST" duration-ms="3226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveUploadedDocument -->
-        <test-method signature="sendUploadedDocument()[pri:12, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:31:21 IST" name="sendUploadedDocument" finished-at="2020-07-09T12:31:44 IST" duration-ms="23629" status="PASS">
+        <test-method signature="sendUploadedDocument()[pri:12, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:21:02 IST" name="sendUploadedDocument" finished-at="2020-07-10T15:21:22 IST" duration-ms="19653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendUploadedDocument -->
-        <test-method signature="logOutApplication()[pri:14, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:31:44 IST" name="logOutApplication" finished-at="2020-07-09T12:31:55 IST" duration-ms="10418" status="PASS">
+        <test-method signature="logOutApplication()[pri:14, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:21:22 IST" name="logOutApplication" finished-at="2020-07-10T15:21:33 IST" duration-ms="10619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-09T12:31:55 IST" name="tearDown" finished-at="2020-07-09T12:31:58 IST" duration-ms="3184" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.tq.HomeTestScript.HomeTestScript@2f112965]" started-at="2020-07-10T15:21:33 IST" name="tearDown" finished-at="2020-07-10T15:21:51 IST" duration-ms="18100" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Completed >>> Extent Report Generated]]>

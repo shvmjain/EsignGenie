@@ -7,8 +7,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="setupSuite"/>
+          <include name="VerifyContinueFromDraft"/>
           <include name="setup"/>
-          <include name="completeProcessOfSignatureOfOnePartyToOtherParty"/>
         </methods>
       </class> <!-- org.tq.HomeTestScript.AllTabofHomeTestScript -->
     </classes>

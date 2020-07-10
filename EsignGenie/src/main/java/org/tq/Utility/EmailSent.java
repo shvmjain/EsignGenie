@@ -14,7 +14,8 @@ public class EmailSent extends BaseClass
 	{
 		System.out.println("==========Email Started==========");
 		EmailAttachment attachment=new EmailAttachment();
-		attachment.setPath("E:\\Hybrid framwork\\EsignGenie\\ExtentReports\\EsignGenie"+Helper.getcurrentDateTime()+".html");
+		//attachment.setPath("E:\\Hybrid framwork\\EsignGenie\\ExtentReports\\EsignGenie"+Helper.getcurrentDateTime()+".html");
+		attachment.setPath("C:\\Users\\shivu\\git\\EsignGenie\\EsignGenie\\ExtentReports\\EsignGenie"+Helper.getcurrentDateTime()+".html");
 		attachment.setDisposition(EmailAttachment.ATTACHMENT);
 		attachment.setDescription("Test Report");
 		attachment.setName("Test Execution Report");
@@ -28,7 +29,7 @@ public class EmailSent extends BaseClass
 		email.setSSLOnConnect(true);
 		email.setFrom("sjain@esigngenie.com");
 		email.setSubject("Test Execution Report Mail");
-		email.setMsg("Dear Sir,\n\nAll Test case has been executed successfully. Please find attached Test Report with this mail \n\n\n\nThanks & Regards\nShivam Jain");
+		email.setMsg("Dear Sir,\n\nTest case has been executed successfully. Please find attached Test Report with this mail. \n\nNote-This mail has been sent automatically after the execution of all test cases through Selenium. Please open a test execution report in Google Chrome or Mozilla Firefox Browser for better GUI.\n\nThanks & Regards\nShivam Jain");
 		//email.addTo("dsingh@accountsight.com");
 		//email.addTo("mbist@accountsight.com");
 		email.addTo("sjain@accountsight.com");
