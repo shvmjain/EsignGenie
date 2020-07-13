@@ -15,12 +15,12 @@ public class Listeners extends BaseClass implements ITestListener
 	public void onTestFinish(ITestResult result) 
 	{
 		System.out.println("Test Finished");
-		Helper.CaptureScreenShot(driver);
+		//Helper.CaptureScreenShot(driver);
 	}
 	public void onTestFailure(ITestResult result) 
 	{
 		System.out.println("Test Failed");
-		Helper.CaptureScreenShot(driver);
+		//Helper.CaptureScreenShot(driver);
 	}
 	public void onTestSuccess(ITestResult result) 
 	{

@@ -30,8 +30,8 @@ public class EmailSent extends BaseClass
 		email.setFrom("sjain@esigngenie.com");
 		email.setSubject("Test Execution Report Mail");
 		email.setMsg("Dear Sir,\n\nTest case has been executed successfully. Please find attached Test Report with this mail. \n\nNote-This mail has been sent automatically after the execution of all test cases through Selenium. Please open a test execution report in Google Chrome or Mozilla Firefox Browser for better GUI.\n\nThanks & Regards\nShivam Jain");
-		//email.addTo("dsingh@accountsight.com");
-		//email.addTo("mbist@accountsight.com");
+	//	email.addTo("dsingh@accountsight.com");
+	//	email.addTo("mbist@accountsight.com");
 		email.addTo("sjain@accountsight.com");
 		email.addCc("sjain@esigngenie.com");
 		email.attach(attachment);
