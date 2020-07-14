@@ -8,7 +8,12 @@
           <include name="tearDown"/>
           <include name="setupSuite"/>
           <include name="VerifyContinueFromDraft"/>
+          <include name="VerifyDocumentwaitingforOthersignature"/>
+          <include name="register"/>
+          <include name="TearDownMethod"/>
           <include name="setup"/>
+          <include name="CreateDocumentFromHomePage"/>
+          <include name="VerifyDocumentwaitingformysignature"/>
         </methods>
       </class> <!-- org.tq.HomeTestScript.AllTabofHomeTestScript -->
     </classes>

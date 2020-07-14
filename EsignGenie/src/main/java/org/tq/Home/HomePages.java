@@ -175,7 +175,7 @@ public class HomePages extends BaseClass
 		WebElement ele = clickOnDocumentsWaitingforMySignature;
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", ele);
-		clickOnPdfDocumentFrom.click();
+		clickOnPdfDocumentForm.click();
 		clickOnInitialFieldTextBox.click();
 		Thread.sleep(2000);
 		clickOnInitialImage.click();
@@ -193,7 +193,7 @@ public class HomePages extends BaseClass
 		WebElement ele = clickOnDocumentsWaitingforOtherSignature;
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", ele);
-		clickOnPdfDocumentFrom.click();
+		clickOnPdfDocumentForm.click();
 		clickOnSignatureFieldFromDocumentWaitingForOtherSignature.click();
 		Thread.sleep(2000);
 		clickOnSignatureImage.click();
@@ -211,7 +211,7 @@ public class HomePages extends BaseClass
 		WebElement ele = clickOnContinousFromDraft;
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", ele);
-		clickOnPdfDocumentFrom.click();
+		clickOnPdfDocumentForm.click();
 		sendDocument();
 		
 	}
@@ -222,6 +222,7 @@ public class HomePages extends BaseClass
 		WebElement ele = clickOnCompletedDocuments;
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", ele);
+		clickOnPdfDocumentForm.click();
 		
 	}
 	
@@ -333,7 +334,7 @@ public class HomePages extends BaseClass
 	private WebElement clickOnCompletedDocuments;
 
 	@FindBy(xpath="//div[@class='list-group']/div[@class='list-group-item'][1]/div[@class='row']/div[@class='col-sm-4 fittext']/span/a") 
-	private WebElement clickOnPdfDocumentFrom;
+	private WebElement clickOnPdfDocumentForm;
 
 	@FindBy(xpath="//*[@class='drag-initialfield ttbottom']") 
 	private WebElement clickOnInitialFieldTextBox;

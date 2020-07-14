@@ -3,7 +3,6 @@ package org.tq.EsignGenie;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -18,7 +17,6 @@ import org.tq.Utility.EmailSent;
 import org.tq.Utility.ExcelUtility;
 import org.tq.Utility.GetProperty;
 import org.tq.Utility.Helper;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
