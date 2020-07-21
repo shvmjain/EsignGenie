@@ -224,8 +224,8 @@ public class HomeTestScript extends BaseClass
 		LoginPage login= new LoginPage(driver);
 		HomePages homepage= new HomePages(driver);
 		LogoutPages logout = new LogoutPages(driver);
-		login.Loginaccount("shvmjain@gmail.com", "Shivam");
-		//login.LoginaccountwithDifferentUser("shvmjain@gmail.com", "Shivam");
+		//login.Loginaccount("shvmjain@gmail.com", "Shivam");
+		login.LoginaccountwithDifferentUser("shvmjain@gmail.com", "Shivam");
 		homepage.completedDocuments();
 		logout.logOut();
 		//test.pass("Pass");

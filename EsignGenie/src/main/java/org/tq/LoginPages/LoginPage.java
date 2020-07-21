@@ -24,8 +24,9 @@ public class LoginPage extends BaseClass
 		PageFactory.initElements(driver, this);
 	}
 	
-	
-	 @FindBy(xpath="//*[@id=\'menu-business-menu\']/li[7]/a") private WebElement enterLoginButton;
+
+	@FindBy(xpath="//*[@id=\'menu-business-menu\']/li[8]/a") private WebElement enterLoginButton;
+	// @FindBy(xpath="//ul[@id='menu-business-menu']/li[@class='btn-login menu-item menu-item-type-custom menu-item-object-custom menu-item-6191']/a") private WebElement enterLoginButton;
 	 @FindBy(xpath="//*[@id=\'login_party_emailId\']") private WebElement enterUserName;
 	 @FindBy(xpath="//*[@id=\'login_party_loginPassword\']") private WebElement enterPassword;
 	 @FindBy(xpath="//*[@id=\'submit\']") private WebElement clickOnLogin;

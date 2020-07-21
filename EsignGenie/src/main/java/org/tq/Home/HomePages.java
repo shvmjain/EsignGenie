@@ -371,6 +371,20 @@ public class HomePages extends BaseClass
 
 	@FindBy(xpath="//span[@class='far fa-download']") 
 	private WebElement clickOnDownloadFileFromDraft;
+	
+	
+	@FindBy(xpath="//*[@id=\"templatesListTable\"]/tr[1]/td[1]/div/input")
+	private WebElement clickOnCheckBoxOfSelectionTemplate;
+	
+	@FindBy(xpath="//button[@class='btn btn-primary btn-sm fr']")
+	private WebElement clickOnSendSelectTemplateButton;
+	
+	@FindBy(xpath="//div[@id='party_info_1']/button[@class='btn btn-default btn-sm mrgR15'][1]")
+	private WebElement clickOnAddMeButtonOnSendTemplate;
+	
+	
+	
+	
 
 	//div[@class='drag-signfield']
 
